@@ -1,0 +1,5 @@
+{
+  "resultsDir": "reports/allure-results",
+  "reportsDir": "reports/allure-report",
+  "historyFile": "reports/allure-history.jsonl"
+}

@@ -1,0 +1,7 @@
+{
+  "createPost": {
+    "userId": 1,
+    "title": "E2E framework sample post",
+    "body": "Created by the posts API feature."
+  }
+}

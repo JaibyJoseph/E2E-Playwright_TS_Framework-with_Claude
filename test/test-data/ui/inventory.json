@@ -1,0 +1,8 @@
+{
+  "sortOptions": {
+    "nameAsc": { "label": "Name (A to Z)", "field": "name", "order": "asc" },
+    "nameDesc": { "label": "Name (Z to A)", "field": "name", "order": "desc" },
+    "priceAsc": { "label": "Price (low to high)", "field": "price", "order": "asc" },
+    "priceDesc": { "label": "Price (high to low)", "field": "price", "order": "desc" }
+  }
+}

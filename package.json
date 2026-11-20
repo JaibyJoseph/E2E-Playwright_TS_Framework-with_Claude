@@ -1,0 +1,37 @@
+{
+  "name": "e2e-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generic E2E framework for UI and API testing with Playwright, TypeScript and Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:ui": "cucumber-js --tags @ui",
+    "test:api": "cucumber-js --tags @api",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:unit": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "quality": "npm run format:check && npm run lint && npm run typecheck",
+    "install:browsers": "playwright install chromium",
+    "report:allure": "allure generate && node scripts/allure/link-overview.mjs",
+    "report:allure:open": "allure open --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "allure": "^3.33.0",
+    "allure-cucumberjs": "^3.15.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1"
+  }
+}
